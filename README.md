@@ -6,14 +6,14 @@
   <a href="https://travis-ci.org/Boilertalk/secp256k1.swift">
     <img src="http://img.shields.io/travis/Boilertalk/secp256k1.swift.svg?style=flat" alt="CI Status">
   </a>
-  <a href="http://cocoapods.org/pods/secp256k1">
-    <img src="https://img.shields.io/cocoapods/v/secp256k1.svg?style=flat" alt="Version">
+  <a href="http://cocoapods.org/pods/secp256k1.swift">
+    <img src="https://img.shields.io/cocoapods/v/secp256k1.swift.svg?style=flat" alt="Version">
   </a>
-  <a href="http://cocoapods.org/pods/secp256k1">
-    <img src="https://img.shields.io/cocoapods/l/secp256k1.svg?style=flat" alt="License">
+  <a href="http://cocoapods.org/pods/secp256k1.swift">
+    <img src="https://img.shields.io/cocoapods/l/secp256k1.swift.svg?style=flat" alt="License">
   </a>
-  <a href="http://cocoapods.org/pods/secp256k1">
-    <img src="https://img.shields.io/cocoapods/p/secp256k1.svg?style=flat" alt="Platform">
+  <a href="http://cocoapods.org/pods/secp256k1.swift">
+    <img src="https://img.shields.io/cocoapods/p/secp256k1.swift.svg?style=flat" alt="Platform">
   </a>
   <a href="https://github.com/Carthage/Carthage">
     <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible">
