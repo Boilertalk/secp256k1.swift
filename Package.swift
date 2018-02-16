@@ -8,7 +8,7 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "secp256k1",
-            targets: ["libsecp256k1"]),
+            targets: ["secp256k1"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -39,7 +39,9 @@ let package = Package(
                 "secp256k1/src/bench_verify.c",
                 "secp256k1/src/bench.h",
                 "secp256k1/src/modules/ecdh/tests_impl.h",
-                "secp256k1/src/modules/recovery/tests_impl.h"
+                "secp256k1/src/modules/recovery/tests_impl.h",
+
+                "exporter"
             ],
             sources: [
                 ".",
@@ -50,5 +52,10 @@ let package = Package(
                 "secp256k1/modules/recovery"
             ],
             publicHeadersPath: "secp256k1/include"),
+        .target(
+            name: "secp256k1",
+            dependencies: ["libsecp256k1"],
+            path: "./secp256k1/Classes/exporter",
+            sources: ["."])
     ]
 )
