@@ -49,6 +49,6 @@ let package = Package(
                 "secp256k1/modules/ecdh",
                 "secp256k1/modules/recovery"
             ],
-            publicHeadersPath: "secp256k1/include"),
+            publicHeadersPath: "include"),
     ]
 )
