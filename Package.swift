@@ -20,6 +20,7 @@ let package = Package(
         .target(
             name: "secp256k1",
             path: "./secp256k1/Classes",
+            exclude: ["secp256k1/build-aux", "secp256k1/obj", "secp256k1/sage", "secp256k1/src/asm", "secp256k1/src/java"],
             sources: [".", "secp256k1/src", "secp256k1/include", "secp256k1/contrib", "secp256k1/modules/ecdh", "secp256k1/modules/recovery"],
             publicHeadersPath: "secp256k1/include"),
     ]
