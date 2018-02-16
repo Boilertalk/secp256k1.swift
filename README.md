@@ -33,7 +33,7 @@ All credits for the original source code goes to [bitcoin-core](https://github.c
 
 ## Example
 
-To run the example project, run `pod try secp256k1`. Or clone the repo, and run pod install from the Example directory.
+To run the example project, run `pod try secp256k1.swift`. Or clone the repo, and run pod install from the Example directory.
 
 ## Installation
 
@@ -41,8 +41,18 @@ secp256k1 is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your `Podfile`:
 
 ```ruby
-pod 'secp256k1'
+pod 'secp256k1.swift'
 ```
+
+## Usage
+
+To use secp256k1 functions you need to import it first.
+
+```Swift
+import secp256k1
+```
+
+After that you can use all secp256k1 functions as described [in the official headers](https://github.com/bitcoin-core/secp256k1/tree/master/include).
 
 ## Author
 
