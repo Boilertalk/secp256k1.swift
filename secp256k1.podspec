@@ -42,22 +42,6 @@ Bitcoin, Ethereum and many other Cryptocurrency Signature generation and verific
     'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/secp256k1_ios/Classes"'
   }
 
-  s.prepare_command = <<-CMD
-                        sed -i '' -e 's:include/::g' ./**/**/**/**/*.h
-                        sed -i '' -e 's:include/::g' ./**/**/**/**/**/*.h
-                        sed -i '' -e 's:include/::g' ./**/**/**/**/**/**/*.h
-                        sed -i '' -e 's:include/::g' ./**/**/**/**/*.c
-                        sed -i '' -e 's:src/modules/recovery/:modules/recovery/:g' ./**/**/**/**/*.c
-                        sed -i '' -e 's:src/modules/echd/:modules/ecdh/:g' ./**/**/**/**/*.c
-                        sed -i '' -e 's:contrib/::g' ./**/**/**/**/*.c
-                        sed -i '' -e 's:contrib/::g' ./**/**/**/**/*.c
-
-                        sed -i '' -e 's:libsecp256k1-config.h:../../secp256k1-config.h:g' ./**/**/**/**/*.c
-                        sed -i '' -e 's:libsecp256k1-config.h:../../secp256k1-config.h:g' ./**/**/**/**/*.h
-
-                        sed -i '' -e 's:ecmult_static_context.h:../../secp256k1_ec_mult_static_context.h:g' ./**/**/**/**/*.h
-                   CMD
-
   s.source_files = 'secp256k1/Classes/secp256k1/{src,include,contrib}/*.{h,c}', 'secp256k1/Classes/secp256k1/src/modules/{recovery,ecdh}/*.{h,c}', 'secp256k1_ios/Classes/libsecp256k1-config.h', 'secp256k1_ios/Classes/secp256k1.h', 'secp256k1/Classes/ecmult_static_context.h.h'
   s.public_header_files = 'secp256k1/Classes/secp256k1/include/*.h'
   s.private_header_files = 'secp256k1/Classes/ecmult_static_context.h.h', 'secp256k1/Classes/secp256k1/*.h', 'secp256k1/Classes/secp256k1/{contrib,src}/*.h', 'secp256k1/Classes/secp256k1/src/modules/{recovery, ecdh}/*.h'
