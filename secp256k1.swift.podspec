@@ -26,7 +26,7 @@ Bitcoin, Ethereum and many other Cryptocurrency Signature generation and verific
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Koray Koska' => 'koray@koska.at' }
-  s.source           = { :git => 'https://github.com/Boilertalk/secp256k1.swift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Boilertalk/secp256k1.swift.git', :tag => s.version.to_s, :submodules => true }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
