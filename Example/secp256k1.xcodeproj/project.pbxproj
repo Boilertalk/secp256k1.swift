@@ -271,7 +271,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/secp256k1/secp256k1.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
