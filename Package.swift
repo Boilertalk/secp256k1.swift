@@ -20,8 +20,35 @@ let package = Package(
         .target(
             name: "secp256k1",
             path: "./secp256k1/Classes",
-            exclude: ["secp256k1/build-aux", "secp256k1/obj", "secp256k1/sage", "secp256k1/src/asm", "secp256k1/src/java", "secp256k1/src/testrand_impl.h", "secp256k1/src/testrand.h", "secp256k1/src/tests_exhaustive.c", "secp256k1/src/tests.c", "secp256k1/src/gen_context.c", "secp256k1/src/*bench*.{c,h}", "src/modules/{recovery,ecdh}/*test*.{c,h}"],
-            sources: [".", "secp256k1/src", "secp256k1/include", "secp256k1/contrib", "secp256k1/modules/ecdh", "secp256k1/modules/recovery"],
+            exclude: [
+                "secp256k1/build-aux",
+                "secp256k1/obj",
+                "secp256k1/sage",
+                "secp256k1/src/asm",
+                "secp256k1/src/java",
+                "secp256k1/src/testrand_impl.h",
+                "secp256k1/src/testrand.h",
+                "secp256k1/src/tests_exhaustive.c",
+                "secp256k1/src/tests.c",
+                "secp256k1/src/gen_context.c",
+                "secp256k1/src/bench_ecdh.c",
+                "secp256k1/src/bench_ecmult.c",
+                "secp256k1/src/bench_internal.c",
+                "secp256k1/src/bench_recover.c",
+                "secp256k1/src/bench_sign.c",
+                "secp256k1/src/bench_verify.c",
+                "secp256k1/src/bench.h",
+                "secp256k1/src/modules/ecdh/tests_impl.h",
+                "secp256k1/src/modules/recovery/tests_impl.h"
+            ],
+            sources: [
+                ".",
+                "secp256k1/src",
+                "secp256k1/include",
+                "secp256k1/contrib",
+                "secp256k1/modules/ecdh",
+                "secp256k1/modules/recovery"
+            ],
             publicHeadersPath: "secp256k1/include"),
     ]
 )
