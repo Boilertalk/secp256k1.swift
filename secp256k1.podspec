@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'secp256k1'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of secp256k1.'
+  s.summary          = 'secp256k1 bindings for swift. Cocoapods, Carthage and SPM support. Linux support.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This pod binds the bitcoin-core library, the ECDSA curve, secp256k1 into Swift. This curve is used for
+Bitcoin, Ethereum and many other Cryptocurrency Signature generation and verification.
                        DESC
 
   s.homepage         = 'https://github.com/Boilertalk/secp256k1.swift'
@@ -29,6 +30,9 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.10'
+  s.tvos.deployment_target = '9.0'
+  s.watchos.deployment_target = '2.0'
 
   s.module_name = 'secp256k1'
 
@@ -48,10 +52,10 @@ TODO: Add long description of the pod here.
                         sed -i '' -e 's:contrib/::g' ./**/**/**/**/*.c
                         sed -i '' -e 's:contrib/::g' ./**/**/**/**/*.c
 
-                        sed -i '' -e 's:libsecp256k1-config.h:../../libsecp256k1-config.h:g' ./**/**/**/**/*.c
-                        sed -i '' -e 's:libsecp256k1-config.h:../../libsecp256k1-config.h:g' ./**/**/**/**/*.h
+                        sed -i '' -e 's:libsecp256k1-config.h:../../secp256k1-config.h:g' ./**/**/**/**/*.c
+                        sed -i '' -e 's:libsecp256k1-config.h:../../secp256k1-config.h:g' ./**/**/**/**/*.h
 
-                        sed -i '' -e 's:ecmult_static_context.h:../../ecmult_static_context.h:g' ./**/**/**/**/*.h
+                        sed -i '' -e 's:ecmult_static_context.h:../../secp256k1_ec_mult_static_context.h:g' ./**/**/**/**/*.h
                    CMD
 
   s.source_files = 'secp256k1/Classes/secp256k1/{src,include,contrib}/*.{h,c}', 'secp256k1/Classes/secp256k1/src/modules/{recovery,ecdh}/*.{h,c}', 'secp256k1_ios/Classes/libsecp256k1-config.h', 'secp256k1_ios/Classes/secp256k1.h', 'secp256k1/Classes/ecmult_static_context.h.h'
