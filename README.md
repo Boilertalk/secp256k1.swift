@@ -37,11 +37,31 @@ To run the example project, run `pod try secp256k1.swift`. Or clone the repo, an
 
 ## Installation
 
+### CocoaPods
+
 secp256k1 is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your `Podfile`:
 
 ```ruby
 pod 'secp256k1.swift'
+```
+
+### Carthage
+
+secp256k1 is compatible with [Carthage](https://github.com/Carthage/Carthage), a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To install it, simply add the following line to your `Cartfile`:
+
+```
+github "Boilertalk/secp256k1.swift"
+```
+
+### Swift Package Manager
+
+secp256k1 is compatible with Swift Package Manager v4 (Swift 4 and above). Simply add it to the dependencies in your `Package.swift`.
+
+```Swift
+dependencies: [
+    .package(url: "https://github.com/Boilertalk/secp256k1.swift.git", from: "0.1.0")
+]
 ```
 
 ## Usage
