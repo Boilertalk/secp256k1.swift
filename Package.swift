@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "secp256k1",
             path: "./secp256k1/Classes",
-            sources: [".", "secp256k1"],
+            sources: [".", "secp256k1/src", "secp256k1/include", "secp256k1/contrib", "secp256k1/modules/ecdh", "secp256k1/modules/recovery"],
             publicHeadersPath: "secp256k1/include"),
     ]
 )
