@@ -41,7 +41,17 @@ let package = Package(
                 "secp256k1/src/modules/ecdh/tests_impl.h",
                 "secp256k1/src/modules/recovery/tests_impl.h",
 
-                "exporter"
+                "exporter",
+
+                "secp256k1/COPYING",
+                "secp256k1/Makefile.am",
+                "secp256k1/README.md",
+                "secp256k1/TODO",
+                "secp256k1/autogen.sh",
+                "secp256k1/configure.ac",
+                "secp256k1/libsecp256k1.pc.in",
+                "secp256k1/src/modules/ecdh/Makefile.am.include",
+                "secp256k1/src/modules/recovery/Makefile.am.include",
             ],
             sources: [
                 ".",
