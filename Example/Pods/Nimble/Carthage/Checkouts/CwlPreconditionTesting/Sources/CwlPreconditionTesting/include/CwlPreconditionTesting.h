@@ -1,9 +1,9 @@
 //
-//  CwlCatchException.swift
-//  CwlAssertionTesting
+//  CwlPreconditionTesting.h
+//  CwlPreconditionTesting
 //
 //  Created by Matt Gallagher on 2016/01/10.
-//  Copyright © 2016 Matt Gallagher ( http://cocoawithlove.com ). All rights reserved.
+//  Copyright © 2016 Matt Gallagher ( https://www.cocoawithlove.com ). All rights reserved.
 //
 //  Permission to use, copy, modify, and/or distribute this software for any
 //  purpose with or without fee is hereby granted, provided that the above
@@ -18,20 +18,18 @@
 //  IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-import Foundation
+#import <Foundation/Foundation.h>
 
-#if SWIFT_PACKAGE
-import CwlCatchExceptionSupport
+//! Project version number for CwlUtils.
+FOUNDATION_EXPORT double CwlPreconditionTestingVersionNumber;
+
+//! Project version string for CwlUtils.
+FOUNDATION_EXPORT const unsigned char CwlAssertingTestingVersionString[];
+
+#import "CwlMachBadInstructionHandler.h"
+
+#if TARGET_OS_OSX || TARGET_OS_IOS
+	#import "CwlCatchException.h"
+#elif !TARGET_OS_TV
+	#error Unsupported platform.
 #endif
-
-private func catchReturnTypeConverter<T: NSException>(_ type: T.Type, block: () -> Void) -> T? {
-	// Get the type from an *instance*, instead of a receiving the type directly
-	return catchExceptionOfKind(type, block) as? T
-}
-
-extension NSException {
-	public static func catchException(in block: () -> Void) -> Self? {
-		// Use a dummy instance of Self to provide the type
-		return catchReturnTypeConverter(self, block: block)
-	}
-}
