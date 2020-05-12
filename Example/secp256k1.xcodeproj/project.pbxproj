@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		037028A870F0FD50A4BA525A /* Pods-secp256k1_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secp256k1_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-secp256k1_Tests/Pods-secp256k1_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		37B25BA0A2B2E51AC45C6F1B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3C7FCC32CB0510D76DCCF4B7 /* secp256k1.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = secp256k1.podspec; path = ../secp256k1.podspec; sourceTree = "<group>"; };
+		37B25BA0A2B2E51AC45C6F1B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3C7FCC32CB0510D76DCCF4B7 /* secp256k1.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = secp256k1.podspec; path = ../secp256k1.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* secp256k1_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = secp256k1_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		607FACE51AFB9204008FA782 /* secp256k1_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = secp256k1_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		651F233348013DB00E398AE8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		651F233348013DB00E398AE8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A4A2B58E31A177A30945ACD0 /* Pods-secp256k1_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secp256k1_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BE85D6957744DDAB8F346E07 /* Pods_secp256k1_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_secp256k1_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31B04AB194C6A0DC0067A4D /* Pods-secp256k1_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secp256k1_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -227,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
