@@ -1,3 +1,5 @@
+<!-- here is a non-code change that will trigger CI -->
+
 <a href="https://github.com/Boilertalk/secp256k1.swift">
   <img src="https://storage.googleapis.com/boilertalk/logo.svg" width="100%" height="256">
 </a>
