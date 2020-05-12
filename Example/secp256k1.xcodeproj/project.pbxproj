@@ -170,6 +170,8 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
+                                112D045169968519ACD2A4C1 /* [CP] Embed Pods Frameworks */,	
+				930C69F707011D3E39330135 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,6 +191,7 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				A27FA84C0A2E19534EC3811E /* [CP] Embed Pods Frameworks */,
+                                9C85CF9BF21986C3C46A1616 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +264,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+112D045169968519ACD2A4C1 /* [CP] Embed Pods Frameworks */ = {	
+			isa = PBXShellScriptBuildPhase;	
+			buildActionMask = 2147483647;	
+			files = (	
+			);	
+			inputPaths = (	
+				"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-frameworks.sh",	
+				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",	
+			);	
+			name = "[CP] Embed Pods Frameworks";	
+			outputPaths = (	
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",	
+			);	
+			runOnlyForDeploymentPostprocessing = 0;	
+			shellPath = /bin/sh;	
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-frameworks.sh\"\n";	
+			showEnvVarsInLog = 0;	
+		};	
+		930C69F707011D3E39330135 /* [CP] Copy Pods Resources */ = {	
+			isa = PBXShellScriptBuildPhase;	
+			buildActionMask = 2147483647;	
+			files = (	
+			);	
+			inputPaths = (	
+			);	
+			name = "[CP] Copy Pods Resources";	
+			outputPaths = (	
+			);	
+			runOnlyForDeploymentPostprocessing = 0;	
+			shellPath = /bin/sh;	
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-resources.sh\"\n";	
+			showEnvVarsInLog = 0;	
+		};	
+		9C85CF9BF21986C3C46A1616 /* [CP] Copy Pods Resources */ = {	
+			isa = PBXShellScriptBuildPhase;	
+			buildActionMask = 2147483647;	
+			files = (	
+			);	
+			inputPaths = (	
+			);	
+			name = "[CP] Copy Pods Resources";	
+			outputPaths = (	
+			);	
+			runOnlyForDeploymentPostprocessing = 0;	
+			shellPath = /bin/sh;	
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Tests/Pods-secp256k1_Tests-resources.sh\"\n";	
+			showEnvVarsInLog = 0;	
+		};
 		A27FA84C0A2E19534EC3811E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
