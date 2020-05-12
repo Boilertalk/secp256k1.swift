@@ -1,11 +1,11 @@
 PODS:
   - Nimble (8.0.7)
-  - Quick (1.2.0)
+  - Quick (2.2.0)
   - secp256k1.swift (0.1.4)
 
 DEPENDENCIES:
   - Nimble (~> 8.0.7)
-  - Quick (~> 1.2.0)
+  - Quick (~> 2.2.0)
   - secp256k1.swift (from `../`)
 
 SPEC REPOS:
@@ -19,9 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Nimble: a73af6ecd4c9106f434f3d55fc54570be3739e0b
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
 
-PODFILE CHECKSUM: c7154eb5e393dbcf689735a3b0343d9e2b68ae83
+PODFILE CHECKSUM: ef56198c5a3542d3ae041c889661bf07f7613934
 
 COCOAPODS: 1.9.1
