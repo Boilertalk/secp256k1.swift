@@ -1,6 +1,6 @@
 {
   "name": "secp256k1.swift",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "summary": "secp256k1 bindings for swift. Cocoapods, Carthage and SPM support. Linux support.",
   "description": "This pod binds the bitcoin-core library, the ECDSA curve, secp256k1 into Swift. This curve is used for\nBitcoin, Ethereum and many other Cryptocurrency Signature generation and verification.",
   "homepage": "https://github.com/Boilertalk/secp256k1.swift",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Boilertalk/secp256k1.swift.git",
-    "tag": "0.1.0",
+    "tag": "0.1.4",
     "submodules": true
   },
   "platforms": {
