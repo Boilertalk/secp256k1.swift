@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
@@ -24,8 +24,8 @@ let package = Package(
                 "secp256k1/build-aux",
                 "secp256k1/obj",
                 "secp256k1/sage",
+                "secp256k1/contrib/travis.sh",
                 "secp256k1/src/asm",
-                "secp256k1/src/java",
                 "secp256k1/src/testrand_impl.h",
                 "secp256k1/src/testrand.h",
                 "secp256k1/src/tests_exhaustive.c",
@@ -38,6 +38,7 @@ let package = Package(
                 "secp256k1/src/bench_sign.c",
                 "secp256k1/src/bench_verify.c",
                 "secp256k1/src/bench.h",
+                "secp256k1/src/valgrind_ctime_test.c",
                 "secp256k1/src/modules/ecdh/tests_impl.h",
                 "secp256k1/src/modules/recovery/tests_impl.h",
 
@@ -61,7 +62,13 @@ let package = Package(
                 "secp256k1/modules/ecdh",
                 "secp256k1/modules/recovery"
             ],
-            publicHeadersPath: "secp256k1/include"),
+            publicHeadersPath: "secp256k1/include",
+            cSettings: [
+                .headerSearchPath(""),
+                .headerSearchPath("secp256k1"),
+                .headerSearchPath("secp256k1/src"),
+                .define("HAVE_CONFIG_H=1"),
+            ]),
         .target(
             name: "secp256k1",
             dependencies: ["libsecp256k1"],
