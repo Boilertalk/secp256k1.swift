@@ -47,6 +47,7 @@ let package = Package(
                 "secp256k1/COPYING",
                 "secp256k1/Makefile.am",
                 "secp256k1/README.md",
+                "secp256k1/SECURITY.md",
                 "secp256k1/TODO",
                 "secp256k1/autogen.sh",
                 "secp256k1/configure.ac",
