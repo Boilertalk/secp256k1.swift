@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
@@ -24,8 +24,8 @@ let package = Package(
                 "secp256k1/build-aux",
                 "secp256k1/obj",
                 "secp256k1/sage",
+                "secp256k1/contrib/travis.sh",
                 "secp256k1/src/asm",
-                "secp256k1/src/java",
                 "secp256k1/src/testrand_impl.h",
                 "secp256k1/src/testrand.h",
                 "secp256k1/src/tests_exhaustive.c",
@@ -38,10 +38,22 @@ let package = Package(
                 "secp256k1/src/bench_sign.c",
                 "secp256k1/src/bench_verify.c",
                 "secp256k1/src/bench.h",
+                "secp256k1/src/valgrind_ctime_test.c",
                 "secp256k1/src/modules/ecdh/tests_impl.h",
                 "secp256k1/src/modules/recovery/tests_impl.h",
 
-                "exporter"
+                "exporter",
+
+                "secp256k1/COPYING",
+                "secp256k1/Makefile.am",
+                "secp256k1/README.md",
+                "secp256k1/SECURITY.md",
+                "secp256k1/TODO",
+                "secp256k1/autogen.sh",
+                "secp256k1/configure.ac",
+                "secp256k1/libsecp256k1.pc.in",
+                "secp256k1/src/modules/ecdh/Makefile.am.include",
+                "secp256k1/src/modules/recovery/Makefile.am.include",
             ],
             sources: [
                 ".",
@@ -51,7 +63,13 @@ let package = Package(
                 "secp256k1/modules/ecdh",
                 "secp256k1/modules/recovery"
             ],
-            publicHeadersPath: "secp256k1/include"),
+            publicHeadersPath: "secp256k1/include",
+            cSettings: [
+                .headerSearchPath(""),
+                .headerSearchPath("secp256k1"),
+                .headerSearchPath("secp256k1/src"),
+                .define("HAVE_CONFIG_H=1"),
+            ]),
         .target(
             name: "secp256k1",
             dependencies: ["libsecp256k1"],
