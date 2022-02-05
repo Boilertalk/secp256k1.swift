@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		28C87C5295E19294E17FEAFB /* Pods_secp256k1_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE85D6957744DDAB8F346E07 /* Pods_secp256k1_Example.framework */; };
-		2ED51E7F18E714D54E055763 /* Pods_secp256k1_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE87FE07AF207632B40E18FB /* Pods_secp256k1_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,7 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		037028A870F0FD50A4BA525A /* Pods-secp256k1_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secp256k1_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-secp256k1_Tests/Pods-secp256k1_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		37B25BA0A2B2E51AC45C6F1B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3C7FCC32CB0510D76DCCF4B7 /* secp256k1.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = secp256k1.podspec; path = ../secp256k1.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* secp256k1_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = secp256k1_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,8 +43,6 @@
 		A4A2B58E31A177A30945ACD0 /* Pods-secp256k1_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secp256k1_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BE85D6957744DDAB8F346E07 /* Pods_secp256k1_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_secp256k1_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31B04AB194C6A0DC0067A4D /* Pods-secp256k1_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secp256k1_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CD7E7F48DF8D90AD21DEAE8E /* Pods-secp256k1_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secp256k1_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-secp256k1_Tests/Pods-secp256k1_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CE87FE07AF207632B40E18FB /* Pods_secp256k1_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_secp256k1_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ED51E7F18E714D54E055763 /* Pods_secp256k1_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,8 +69,6 @@
 			children = (
 				A4A2B58E31A177A30945ACD0 /* Pods-secp256k1_Example.debug.xcconfig */,
 				C31B04AB194C6A0DC0067A4D /* Pods-secp256k1_Example.release.xcconfig */,
-				037028A870F0FD50A4BA525A /* Pods-secp256k1_Tests.debug.xcconfig */,
-				CD7E7F48DF8D90AD21DEAE8E /* Pods-secp256k1_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -84,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				BE85D6957744DDAB8F346E07 /* Pods_secp256k1_Example.framework */,
-				CE87FE07AF207632B40E18FB /* Pods_secp256k1_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,7 +163,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				112D045169968519ACD2A4C1 /* [CP] Embed Pods Frameworks */,
-				930C69F707011D3E39330135 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +177,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "secp256k1_Tests" */;
 			buildPhases = (
-				E6347C05E3D445C53FB1FE78 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				A27FA84C0A2E19534EC3811E /* [CP] Embed Pods Frameworks */,
-				9C85CF9BF21986C3C46A1616 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,7 +258,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -279,57 +267,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		930C69F707011D3E39330135 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C85CF9BF21986C3C46A1616 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Tests/Pods-secp256k1_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A27FA84C0A2E19534EC3811E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Tests/Pods-secp256k1_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Tests/Pods-secp256k1_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B2BD5E4C789A15C45E92AC77 /* [CP] Check Pods Manifest.lock */ = {
@@ -344,24 +282,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-secp256k1_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E6347C05E3D445C53FB1FE78 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-secp256k1_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -549,7 +469,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 037028A870F0FD50A4BA525A /* Pods-secp256k1_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -570,7 +489,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD7E7F48DF8D90AD21DEAE8E /* Pods-secp256k1_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
