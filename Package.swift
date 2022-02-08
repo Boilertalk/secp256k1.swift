@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.1
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
@@ -51,7 +51,11 @@ let package = Package(
                 "secp256k1/modules/ecdh",
                 "secp256k1/modules/recovery"
             ],
-            publicHeadersPath: "secp256k1/include"),
+            publicHeadersPath: "secp256k1/include",
+            cSettings: [
+                .headerSearchPath("secp256k1/src")
+            ]
+        ),
         .target(
             name: "secp256k1",
             dependencies: ["libsecp256k1"],
