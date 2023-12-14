@@ -1,5 +1,0 @@
-use_frameworks!
-
-target 'secp256k1_Example' do
-  pod 'secp256k1.swift', :path => '../'
-end
