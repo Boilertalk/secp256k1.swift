@@ -79,13 +79,16 @@ let package = Package(
                .define("ENABLE_MODULE_MUSIG"),
                .define("ENABLE_MODULE_EXPERIMENTAL"),
 
-               .headerSearchPath("secp256k1/src")
+               .headerSearchPath("secp256k1"),
+               .headerSearchPath("secp256k1/src"),
+               .headerSearchPath("secp256k1/include"),
            ]
         ),
         .target(
             name: "secp256k1",
             dependencies: ["libsecp256k1"],
             path: "./secp256k1/Classes/exporter",
-            sources: ["."])
+            sources: ["."]
+        )
     ]
 )
